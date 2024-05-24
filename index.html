@@ -1,0 +1,149 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>| U.S.P.A bank </title>
+    <link rel="stylesheet" href="style.css">
+    <!-- <link rel="stylesheet" href="bootstrap.min.css"> -->
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css" integrity="sha512-z3gLpd7yknf1YoNbCzqRKc4qyor8gaKU1qmn+CShxbuBusANI9QpRohGBreCFkKxLhei6S9CQXFEbbKuqLg0DA==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <link rel="stylesheet" href="purecounter_vanilla.js.map">
+    <link rel="shortcut icon" href="Images/favicon.ico" type="image/x-icon">
+
+<style>
+  *{
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+  }
+  .footer{
+    padding-top: 20px;
+    height: 17vh;
+    background-color: rgba(146, 169, 21, 0.382);
+    word-spacing: 1px;
+    line-height: 8px;
+  }
+  .frontpage{
+    background-image: linear-gradient(rgba(183, 93, 93, 0.676), rgba(53, 40, 40, 0.692)), url('/Images/BankMan.webp');
+    background-repeat: no-repeat;
+    background-size: cover;
+  }
+  .freee{
+    color: yellow;
+  }
+</style>
+
+  </head>
+<body class="bg-dark text-warning">
+    
+        <nav class="navbar navbar-expand-lg bg-secondary sticky-top">
+            <div class="container-fluid ">
+              <a class="navbar-brand" href="index.html">U.S.P.A bank</a>
+
+                  <li class="nav-item dropdown">
+                    <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+                 Dropdown
+                    </a>
+                    <ul class="dropdown-menu">
+                  <!-- <li><a class="dropdown-item" href="iss.html">Home</a></li> -->
+                  <li><a class="dropdown-item" href="index.html#frm">Contact Us</a></li>
+                  <li><hr class="dropdown-divider"></li>
+                  <li><a class="dropdown-item text-" href="signup.html">Signup</a></li>
+                    </ul>
+                  </li>
+                </ul>
+              </div>
+          </nav>
+    
+    <div class="frontpage">
+        <form id="loginForm" class="p-5 m-5">
+            <span class="display-4 fw-bold">LogIn</span> 
+            <br><br>
+            <div class="mb-3">
+              <label for="username" class="form-label">username</label>
+              <input type="text" class="form-control w-50" id="username" aria-describedby="emailHelp" required>
+              <div id="emailHelp" class="form-text">We'll never share your username with anyone.</div>
+            </div>
+            <div class="mb-3">
+              <label for="password" class="form-label">Password</label>
+              <input type="password" class="form-control w-50" id="password" required>
+            </div>
+            <div class="mb-3 form-check">
+              <input type="checkbox" class="form-check-input" id="check">
+              <label class="form-check-label" for="exampleCheck1">Remember me</label>
+            </div>
+
+          <button type="button" class="button btn-warning w-50" onclick="login()">&#8250 Login</button>
+        </form>
+    </div>
+
+<div class="free p-5" id="free">
+  <h2>FREE PERKS & PROTECTION</h2>
+  <ul>
+    <li><mark style="background-color:black; color:blue">FREE</mark> Personal Identity Protection</li>
+    <li><mark style="background-color:black; color:blue">FREE</mark> Identity Recovery Service</li>
+    <li><mark style="background-color:black; color:blue">FREE</mark> Payment Caed Protection</li>
+    <li><mark style="background-color:black; color:blue">FREE</mark> Mobile Banking & Alerts</li>
+    <li><mark style="background-color:black; color:blue">FREE</mark> Unlimited Online Bill Pay</li>
+    <li><mark style="background-color:black; color:blue">FREE</mark> Credit Score Monitoring</li>
+    <li><mark style="background-color:black; color:blue">FREE</mark> eStatements</li>
+    <li><mark style="background-color:black; color:blue">$0</mark> Monthly Charge</li>
+    <li>PLUS, a Debit Mastercard with access to 52,000 <mark style="background-color:black; color:blue">surcharge-free</mark> Allpoint ATMs</li>
+  </ul>
+</div>
+
+
+
+
+    <div class="container p-5">
+      <h2 class="text-center">Contact Us &#8249</h2>
+      <form id="frm">
+          <div class="form-group">
+              <label for="name">Name:</label>
+              <input type="text" class="form-control" id="name" placeholder="Enter your name">
+          </div>
+          <div class="form-group">
+              <label for="email">Email:</label>
+              <input type="email" class="form-control" id="email" placeholder="Enter your email">
+          </div>
+          <div class="form-group">
+              <label for="subject">Subject:</label>
+              <input type="text" class="form-control" id="subject" placeholder="Enter the subject">
+          </div>
+          <div class="form-group">
+              <label for="message">Message:</label>
+              <textarea class="form-control" id="message" rows="5" placeholder="Type your message"></textarea>
+          </div>
+            <button type="submit" onclick="submitForm()" class="btn btn-primary">Submit</button>
+      </form>
+  </div>
+
+
+
+
+
+        <footer class="footer text-white text-center">
+          <div class="copy-add">
+                     <!-- <h3 style="color: white;">Road 3, international airport way Habert Marculay</h3> -->
+                      <p style="color:rgba(255, 255, 255, 0.309);">website:www.uspa.com</p>
+                      <p style="color:rgba(255, 255, 255, 0.309);">callUs: +1393-456-7890</p>
+          </div>
+          
+          <div class="social">
+                     <a href="http://www.facebook.com"> <i class="fa-brands fa-facebook fa-xl" style="color: black;"></i></a>
+                     <a href="http://www.instagram.com/en"> <i class="fa-brands fa-square-instagram fa-xl" style="color: black;"></i></a>
+                     <a href="http://www.twitter.com"> <i class="fa-brands fa-twitter fa-xl" style="color: black;"></i></a>
+                     <a href="http://www.telegram.com"> <i class="fa-brands fa-telegram fa-xl" style="color: black;"></i></a>
+                     <a href="http://www.youtube.com"> <i class="fa-brands fa-youtube  fa-xl" style="color: black;"></i></a>
+                     <p style="color:rgba(255, 255, 255, 0.648); text-align: center; margin-top: 20px;">&copy; _2024 U.S.P.A. </p>
+          </div>
+                
+      </footer>
+        
+
+        <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-C6RzsynM9kWDrMNeT87bh95OGNyZPhcTNXj1NW7RuBCsyN/o0jlpcV8Qyq46cDfL" crossorigin="anonymous"></script>
+        <script src="iss.js"></script>
+    
+</body>
+</html>
