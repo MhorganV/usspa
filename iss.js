@@ -28,8 +28,8 @@ document.getElementById("logout").addEventListener("click", logout);
 
 function checkAvailableBalance() {
     // Perform logic to calculate available balance (placeholder value for demonstration)
-    // var savingsBalance = 00.00;
-    // var currentBalance = 00.00;
+    var savingsBalance = 225500.00;
+    var currentBalance = 245500.00;
 
     var availableBalance = savingsBalance + currentBalance;
 
